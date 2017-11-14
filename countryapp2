@@ -2,13 +2,13 @@ var jsonReader = require('./countryapp.js')
 
 var Input = process.argv[2]
 
-var fileReader = function(Country){
+var fileReader = function(data){
 
 
-	for (var i = 0; i < Country.length; i++) {
-		if(Input==Country[i].name){
-	console.log(Country[i].name)
-	console.log(Country[i].topLevelDomain)
+	for (var i = 0; i < data.length; i++) {
+		if(Input==data[i].name){
+	console.log(data[i].name)
+	console.log(data[i].topLevelDomain)
 }
 
 }
